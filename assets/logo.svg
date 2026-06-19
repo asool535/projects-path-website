@@ -1,0 +1,44 @@
+<svg width="560" height="160" viewBox="0 0 560 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Projects Path General Trading and Contracting">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7E7B0"/>
+      <stop offset="0.45" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#A67C00"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3D98B"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem -->
+  <g transform="translate(12,16)">
+    <!-- Hexagon frame -->
+    <polygon points="64,4 116,34 116,94 64,124 12,94 12,34"
+             fill="#0B0B0B" stroke="url(#gold)" stroke-width="3"/>
+    <polygon points="64,16 105,40 105,88 64,112 23,88 23,40"
+             fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.4"/>
+
+    <!-- Perspective road / path -->
+    <path d="M44,100 L60,40 L68,40 L84,100 Z" fill="url(#gold)" opacity="0.95"/>
+    <!-- Centerline dashes -->
+    <g fill="#0B0B0B">
+      <polygon points="62.6,52 65.4,52 64.9,60 63.1,60"/>
+      <polygon points="61.6,70 66.4,70 65.7,80 62.3,80"/>
+      <polygon points="60.3,90 67.7,90 66.8,100 61.2,100"/>
+    </g>
+    <!-- Rising sun / progress arc above road -->
+    <path d="M50,38 A16,16 0 0 1 78,38" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="64" y1="14" x2="64" y2="22" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="44" y1="22" x2="48" y2="28" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="84" y1="22" x2="80" y2="28" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(150,0)">
+    <text x="0" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="1.5" fill="url(#goldText)">PROJECTS PATH</text>
+    <line x1="2" y1="78" x2="372" y2="78" stroke="url(#gold)" stroke-width="1.5"/>
+    <text x="2" y="100" font-family="Georgia, serif" font-size="14.5" letter-spacing="3.2" fill="#E8E8E8">GENERAL TRADING &amp; CONTRACTING</text>
+    <text x="372" y="132" text-anchor="end" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="22" fill="url(#goldText)" direction="rtl">مسار المشاريع للتجارة العامة والمقاولات</text>
+  </g>
+</svg>

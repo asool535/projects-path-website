@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <style>
+      text { font-family: sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background for hexagon -->
+  <g id="hexagon">
+    <polygon points="620,40 680,20 740,40 740,140 680,160 620,140" fill="none" stroke="#d4af37" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Letter A in hexagon -->
+  <text x="680" y="125" font-size="100" font-weight="bold" fill="#d4af37" text-anchor="middle" font-family="Georgia, serif">A</text>
+
+  <!-- Title text -->
+  <text x="580" y="90" font-size="50" font-weight="600" fill="#d4af37" text-anchor="end">Projects</text>
+  <text x="580" y="140" font-size="50" font-weight="600" fill="#d4af37" text-anchor="end">Path</text>
+
+  <!-- Subtitle -->
+  <text x="580" y="175" font-size="18" font-weight="400" fill="#b8860b" text-anchor="end">General Trading &amp; Contracting</text>
+</svg>
