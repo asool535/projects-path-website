@@ -10,6 +10,7 @@ const I18N = {
     nav_about: "About", nav_services: "Services", nav_sectors: "Sectors",
     nav_why: "Why Us", nav_process: "Process", nav_contact: "Contact",
 
+    hero_subtitle: "One of Dr. Concrete's Companies",
     hero_eyebrow: "Baghdad, Iraq",
     hero_title: "Building the Path to Iraq's Future",
     hero_lead: "An integrated general trading and contracting group delivering construction, oil & gas services, materials supply, and solar energy with engineering precision and proven reliability.",
@@ -111,6 +112,7 @@ const I18N = {
     nav_about: "من نحن", nav_services: "خدماتنا", nav_sectors: "القطاعات",
     nav_why: "لماذا نحن", nav_process: "آلية العمل", nav_contact: "اتصل بنا",
 
+    hero_subtitle: "احدى شركات دكتور كونكريت",
     hero_eyebrow: "بغداد، العراق",
     hero_title: "نبني الطريق نحو مستقبل العراق",
     hero_lead: "مجموعة متكاملة للتجارة العامة والمقاولات تقدّم خدمات الإنشاءات والنفط والغاز وتوريد المواد والطاقة الشمسية بدقة هندسية وموثوقية مثبتة.",
