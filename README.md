@@ -28,7 +28,7 @@ Use the **العربية / English** button in the top-right to switch language 
 | What | Where |
 |------|-------|
 | Phone number | `index.html` → `+964 770 000 0000` (and `tel:` link) |
-| Email | `index.html` → `info@projectspath.iq` |
+| Email | `index.html` → `ahmedalkhalifa@projectpathiq.com` |
 | Address | `data-i18n="contact_addr"` text, and translations in `script.js` |
 | Stats (15+, 200+) | `script.js` → `stat1_n`, `stat2_n` … (both `en` and `ar`) |
 | Any wording | `script.js` → edit the `I18N.en` / `I18N.ar` dictionaries |
