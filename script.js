@@ -222,6 +222,8 @@ function setLang(lang){
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
+  emailjs.init("TsTKdBtq7Uh4-lD0o");
+
   let saved = "en";
   try{ saved = localStorage.getItem("pp_lang") || "en"; }catch(e){}
   setLang(saved);
@@ -272,7 +274,26 @@ document.addEventListener("DOMContentLoaded", ()=>{
 function handleSubmit(e){
   e.preventDefault();
   const note = document.getElementById("formNote");
-  note.hidden = false;
-  e.target.reset();
+  const form = e.target;
+
+  const templateParams = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    service: form.service.value,
+    message: form.message.value
+  };
+
+  emailjs.send("service_4x4t1tn", "template_lphup9d", templateParams)
+    .then(() => {
+      note.hidden = false;
+      form.reset();
+    })
+    .catch((err) => {
+      console.error("Failed to send email:", err);
+      note.textContent = "Error sending message. Please try again.";
+      note.hidden = false;
+    });
+
   return false;
 }
