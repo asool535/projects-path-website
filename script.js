@@ -222,7 +222,7 @@ function setLang(lang){
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
-  emailjs.init("TsTKdBtq7Uh4-lD0o");
+  try{ emailjs.init("TsTKdBtq7Uh4-lD0o"); }catch(e){ console.warn("EmailJS init failed:", e); }
 
   let saved = "en";
   try{ saved = localStorage.getItem("pp_lang") || "en"; }catch(e){}

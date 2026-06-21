@@ -77,7 +77,7 @@ html[lang="ar"] .brand-sub{letter-spacing:0;font-size:.7rem}
 .header-actions{display:flex;align-items:center;gap:14px}
 .theme-toggle{background:transparent;border:1.5px solid var(--gold-light);color:var(--gold-light);padding:7px 12px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:.2s;position:relative}
 .theme-toggle:hover{border-color:var(--gold-light);background:rgba(212,175,55,.15)}
-.theme-icon{width:18px;height:18px;position:absolute;transition:.35s;opacity:1}
+.theme-icon{width:18px;height:18px;position:absolute;transition:.35s;opacity:1;pointer-events:none}
 .sun-icon{opacity:1;transform:rotate(0deg) scale(1)}
 html[data-theme="light"] .sun-icon{opacity:0;transform:rotate(-180deg) scale(0.8);pointer-events:none}
 .moon-icon{opacity:0;transform:rotate(180deg) scale(0.8);pointer-events:none}
