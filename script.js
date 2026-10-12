@@ -295,15 +295,24 @@ async function handleSubmit(e){
     if (response.ok) {
       note.textContent = "Message sent successfully! We'll be in touch soon.";
       note.hidden = false;
+      note.style.display = "block";
+      note.style.backgroundColor = "#D4AF37";
+      note.style.color = "#1a1a1a";
       form.reset();
     } else {
       note.textContent = data.error || "Error sending message. Please try again.";
       note.hidden = false;
+      note.style.display = "block";
+      note.style.backgroundColor = "#D4AF37";
+      note.style.color = "#1a1a1a";
     }
   } catch (err) {
     console.error("Failed to send email:", err);
     note.textContent = "Error sending message. Please try again.";
     note.hidden = false;
+    note.style.display = "block";
+    note.style.backgroundColor = "#D4AF37";
+    note.style.color = "#1a1a1a";
   }
 
   return false;
