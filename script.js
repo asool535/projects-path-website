@@ -222,7 +222,6 @@ function setLang(lang){
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
-  try{ emailjs.init("TsTKdBtq7Uh4-lD0o"); }catch(e){ console.warn("EmailJS init failed:", e); }
 
   let saved = "en";
   try{ saved = localStorage.getItem("pp_lang") || "en"; }catch(e){}
@@ -271,12 +270,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
   });
 });
 
-function handleSubmit(e){
+async function handleSubmit(e){
   e.preventDefault();
   const note = document.getElementById("formNote");
   const form = e.target;
 
-  const templateParams = {
+  const payload = {
     name: form.name.value,
     email: form.email.value,
     phone: form.phone.value,
@@ -284,16 +283,28 @@ function handleSubmit(e){
     message: form.message.value
   };
 
-  emailjs.send("service_4x4t1tn", "template_lphup9d", templateParams)
-    .then(() => {
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      note.textContent = "Message sent successfully! We'll be in touch soon.";
       note.hidden = false;
       form.reset();
-    })
-    .catch((err) => {
-      console.error("Failed to send email:", err);
-      note.textContent = "Error sending message. Please try again.";
+    } else {
+      note.textContent = data.error || "Error sending message. Please try again.";
       note.hidden = false;
-    });
+    }
+  } catch (err) {
+    console.error("Failed to send email:", err);
+    note.textContent = "Error sending message. Please try again.";
+    note.hidden = false;
+  }
 
   return false;
 }
