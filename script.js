@@ -275,6 +275,15 @@ async function handleSubmit(e){
   const note = document.getElementById("formNote");
   const form = e.target;
 
+  if (!form.service.value) {
+    note.textContent = "Please select a service before submitting.";
+    note.hidden = false;
+    note.style.display = "block";
+    note.style.backgroundColor = "#D4AF37";
+    note.style.color = "#1a1a1a";
+    return;
+  }
+
   const payload = {
     name: form.name.value,
     email: form.email.value,

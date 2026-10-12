@@ -192,9 +192,9 @@ html[data-theme="light"] .moon-icon{opacity:1;transform:rotate(0deg) scale(1)}
 .field{margin-bottom:18px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .field label{display:block;font-size:.85rem;color:var(--gold-light);margin-bottom:8px;font-weight:500}
-.field input,.field select,.field textarea{width:100%;background:#FFFFFF;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--text);font-family:inherit;font-size:.95rem;transition:.2s}
+.field input,.field select,.field textarea{width:100%;background:#FFFFFF;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:#1a1a1a;font-family:inherit;font-size:.95rem;transition:.2s}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
-.form-note{margin-top:16px;padding:14px 16px;background:#D4AF37;color:#1a1a1a;border-radius:10px;font-size:.88rem;font-weight:600;display:block !important}
+.form-note{margin-top:16px;padding:14px 16px;background:#D4AF37;color:#1a1a1a;border-radius:10px;font-size:.88rem;font-weight:600}
 
 /* ===== Service Pickers ===== */
 .service-pickers{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:8px}

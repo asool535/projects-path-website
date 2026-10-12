@@ -61,8 +61,9 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Email error:', error);
     return res.status(500).json({
-      error: 'Failed to send email',
-      details: error.message
+      error: 'Failed to send email. Check: Office365 credentials, SMTP port, TLS settings.',
+      details: error.message,
+      code: error.code
     });
   }
 }
